@@ -31,12 +31,6 @@ The supervisor's router (`tools/supervisor/src/dispatch.ts`) tries, in order:
 
 Hard rule baked in: anything touching email, finance, or secrets skips the cloud tiers and stays local or goes to the frontier model only.
 
-## Tools
-
-- **`tools/supervisor/`** — the always-on loop and cost-cascade router (above).
-- **`tools/wheel/`** — a daily implied-volatility screener for an options wheel: ranks a universe by IV rank and technicals, recommends strikes off volume-profile support, and reports feed health. Screener engine only; see its README.
-- **TradingView control** — for reading and driving a live TradingView chart from the assistant, use the third-party MIT-licensed [tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp). Not vendored here; install it as its own MCP server.
-
 ## What's intentionally not here
 
 No credentials, no live connector configs, no personal memory or business data. Bring your own keys via environment variables. See `.gitignore`.
