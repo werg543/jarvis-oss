@@ -1,0 +1,17 @@
+{
+  "name": "supervisor",
+  "version": "0.1.0",
+  "description": "Always-on supervisor loop with a cost cascade (local, free cloud, frontier).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "once": "node dist/index.js --once",
+    "watch": "node dist/index.js --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^5.6.3"
+  }
+}

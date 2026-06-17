@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+!.env.example
+*.key
+**/credentials*
+**/tokens.json
+**/*-state.json
+.DS_Store
+
+# Your private layer never gets committed. Fill these locally; they stay yours.
+PROFILE.md
+memory/*.md
+!memory/index.md
